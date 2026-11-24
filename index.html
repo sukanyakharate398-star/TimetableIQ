@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Timetable Generation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="brand">
+            <h2>TimeTable</h2>
+            <p>Generation System</p>
+        </div>
+
+        <p class="menu-title">MAIN MENU</p>
+        <a href="#" class="menu active">▦ Dashboard</a>
+        <a href="#" class="menu">▤ Academic Details</a>
+        <a href="#" class="menu">▣ Manage Subjects</a>
+        <a href="#" class="menu">♙ Faculty Management</a>
+        <a href="#" class="menu">▣ Classroom Management</a>
+
+        <p class="menu-title">SCHEDULING</p>
+        <a href="#" class="menu">◷ Working Days & Periods</a>
+        <a href="#" class="menu">▥ Laboratory Batches</a>
+        <a href="#" class="menu">⚙ Generate Timetable</a>
+        <a href="#" class="menu">▦ View Timetable</a>
+
+        <p class="menu-title">SYSTEM</p>
+        <a href="#" class="menu">✓ Conflict Validation</a>
+        <a href="#" class="menu">⇩ Export Timetable</a>
+        <a href="#" class="menu">⚙ Settings</a>
+
+        <div class="sidebar-footer">
+            <p>Automated Timetable</p>
+            <small>Admin Panel</small>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Top Header -->
+        <header class="topbar">
+            <div>
+                <h2>Admin Dashboard</h2>
+                <p>Manage academic schedules and generate timetables</p>
+            </div>
+
+            <div class="admin-profile">
+                <div class="avatar">A</div>
+                <div>
+                    <strong>Administrator</strong>
+                    <small>Admin</small>
+                </div>
+            </div>
+        </header>
+
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <h2>Welcome to Timetable Management!</h2>
+            <p>
+                Generate organized academic timetables by managing
+                subjects, faculty, classrooms and laboratory batches.
+            </p>
+            <span>Automated Timetable Generation System</span>
+        </section>
+
+        <!-- Summary Cards -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <div class="stat-icon">▤</div>
+                <p>Departments</p>
+                <h2>01</h2>
+                <small>Academic departments</small>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">▣</div>
+                <p>Subjects</p>
+                <h2>--</h2>
+                <small>Configured subjects</small>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">♙</div>
+                <p>Faculty Members</p>
+                <h2>--</h2>
+                <small>Assigned faculty</small>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">▦</div>
+                <p>Classrooms</p>
+                <h2>--</h2>
+                <small>Available classrooms</small>
+            </div>
+
+        </section>
+
+        <!-- Scheduling Section -->
+        <section class="content-grid">
+
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3>Academic Configuration</h3>
+                    <span class="tag">Setup</span>
+                </div>
+
+                <div class="form-grid">
+                    <div class="field">
+                        <label>Department</label>
+                        <select>
+                            <option>Computer Science and Engineering</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label>Academic Year</label>
+                        <select>
+                            <option>2026-2027</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label>Semester</label>
+                        <select>
+                            <option>Select Semester</option>
+                            <option>5th Semester</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label>Division</label>
+                        <select>
+                            <option>Select Division</option>
+                            <option>Division A</option>
+                            <option>Division B</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="primary-btn">View Academic Details</button>
+            </div>
+
+            <div class="panel generation-panel">
+                <div class="panel-heading">
+                    <h3>Timetable Generation</h3>
+                    <span class="tag">Scheduling</span>
+                </div>
+
+                <div class="generation-icon">⚙</div>
+                <h3>Generate Your Timetable</h3>
+                <p>
+                    Create a timetable by considering subject periods,
+                    faculty availability, classroom availability and
+                    laboratory requirements.
+                </p>
+
+                <button class="generate-btn">Generate Timetable</button>
+            </div>
+
+        </section>
+
+        <!-- Constraint Section -->
+        <section class="panel constraints">
+            <div class="panel-heading">
+                <h3>Scheduling Constraints</h3>
+                <span class="tag">Validation Rules</span>
+            </div>
+
+            <div class="constraint-grid">
+                <div class="constraint-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <strong>Faculty Clash Prevention</strong>
+                        <small>One faculty member cannot handle two classes at the same time.</small>
+                    </div>
+                </div>
+
+                <div class="constraint-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <strong>Classroom Availability</strong>
+                        <small>A classroom cannot be assigned to multiple classes in one period.</small>
+                    </div>
+                </div>
+
+                <div class="constraint-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <strong>Laboratory Scheduling</strong>
+                        <small>Practical sessions require two consecutive periods.</small>
+                    </div>
+                </div>
+
+                <div class="constraint-item">
+                    <span class="check">✓</span>
+                    <div>
+                        <strong>Subject Period Allocation</strong>
+                        <small>Weekly subject periods must meet the required count.</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timetable Preview -->
+        <section class="panel timetable-panel">
+            <div class="panel-heading">
+                <div>
+                    <h3>Timetable Preview</h3>
+                    <p>Sample weekly timetable layout</p>
+                </div>
+                <button class="outline-btn">View Full Timetable</button>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Period 1</th>
+                            <th>Period 2</th>
+                            <th>Period 3</th>
+                            <th>Period 4</th>
+                            <th>Period 5</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Subject 1</td>
+                            <td>Subject 2</td>
+                            <td>Subject 3</td>
+                            <td>Subject 4</td>
+                            <td>Subject 5</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Subject 2</td>
+                            <td>Subject 3</td>
+                            <td>Subject 1</td>
+                            <td>Subject 5</td>
+                            <td>Subject 4</td>
+                        </tr>
+
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Subject 3</td>
+                            <td>Subject 1</td>
+                            <td>Subject 4</td>
+                            <td>Subject 2</td>
+                            <td>Subject 5</td>
+                        </tr>
+
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Subject 4</td>
+                            <td>Subject 5</td>
+                            <td>Subject 2</td>
+                            <td>Subject 3</td>
+                            <td>Subject 1</td>
+                        </tr>
+
+                        <tr>
+                            <td>Friday</td>
+                            <td>Subject 5</td>
+                            <td>Subject 4</td>
+                            <td>Subject 1</td>
+                            <td>Subject 2</td>
+                            <td>Subject 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="sample-note">
+                Note: This is only a sample preview. Actual timetable
+                entries will be displayed after timetable generation.
+            </p>
+        </section>
+
+        <footer>
+            Automated Timetable Generation System | Admin Dashboard
+        </footer>
+
+    </main>
+</div>
+
+</body>
+</html>
